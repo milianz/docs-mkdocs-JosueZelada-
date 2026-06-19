@@ -1,0 +1,36 @@
+site_name: Taller 4 - Josue Zelada
+site_url: https://milianz.github.io/docs-mkdocs-JosueZelada-/
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: blue
+      accent: teal
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.annotate
+    - content.tabs.link
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      locale: es
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - toc:
+      permalink: "#"
+
+nav:
+  - Inicio: index.md
+  - Guía de uso: guia.md
+  - Referencia: referencia.md
